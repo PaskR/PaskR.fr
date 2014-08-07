@@ -19,16 +19,22 @@ a {
     outline:none;
 }
 
-code, blockquote, pre {
-    display: block;
-    padding: 10px;
-    margin-bottom: 22px;
+code, pre {
     background-color: #262b37;
     color: #fff;
 }
 
-pre code {
-    margin: 0;
+blockquote {
+    border-left: 3px solid #9BA9B0;
+}
+
+blockquote p:last-child {
+    padding: 0;
+}
+
+blockquote, pre {
+    padding: 10px;
+    margin-bottom: 22px;
 }
 
 dl {
