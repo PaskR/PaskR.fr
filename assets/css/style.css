@@ -19,12 +19,16 @@ a {
     outline:none;
 }
 
-code, blockquote {
+code, blockquote, pre {
     display: block;
     padding: 10px;
     margin-bottom: 22px;
     background-color: #262b37;
     color: #fff;
+}
+
+pre code {
+    margin: 0;
 }
 
 dl {
