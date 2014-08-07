@@ -10,4 +10,4 @@ owner:
 # Build settings
 timezone:    Europe/Paris
 markdown: kramdown
-permalink:   /:categories/:title
+permalink:   /blog/:title
