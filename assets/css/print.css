@@ -1,0 +1,44 @@
+#header, .banner, .contact-form, .map-area, #footer, #aboutme h2  {
+    display: none;
+}
+
+#header, .contactDetails {
+    background-color: #fff;
+    color: #1b1f29;
+    overflow: auto;
+    margin-top: 0;
+}
+
+.bannerText {
+    position: relative;
+    margin: 20px auto;
+    background-color: #fff;
+    border-color: #1b1f29;
+}
+
+#wrapper section .container {
+    padding-top: 30px;
+}
+
+#aboutme h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#aboutme h4 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#aboutme h3, #aboutme h4 {
+    text-align: center;
+}
+
+#wrapper section.contact-details {
+    background-color: #fff;
+}
+
+#wrapper section.contact-details .container {
+    padding-top: 0;
+    color: #474d5d;
+}
