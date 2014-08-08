@@ -169,39 +169,12 @@ header{
     zoom: 1;
 }
 
-.socials {
-    display: none;
-}
-
 .banner-text h1{
     text-transform:uppercase;
 }
 .banner-text h2{
     font-size:34px;
     text-transform:none;
-}
-
-#header .socials {
-    position: absolute;
-    top: 60%;
-    text-align: center;
-    width:100%;
-}
-
-#header .socials li {
-    display: inline-block;
-    width:52px !important;
-    height:52px !important;
-}
-
-
-#header .socials li a {
-    width:52px !important;
-    height:52px !important;
-}
-
-#header ul.socials li a i {
-    line-height:52px !important;
 }
 
 .isStuck{
@@ -679,14 +652,10 @@ ul.socials li {
     border-radius: 50%;
 }
 
-ul.socials li:hover a {
-    color:#0a9f9f;
-}
-
 ul.socials li a {
-    color:#333;
     width:42px !important;
     height:42px !important;
+    text-align:center;
 }
 
 ul.socials li a i {
@@ -694,11 +663,14 @@ ul.socials li a i {
     -moz-transition: -moz-transform 0.4s ease-out;
     transition: transform 0.4s ease-out;
     line-height:42px !important;
+    color: #262B37;
+    padding: 0;
 }
 ul.socials li a:hover i {
     -webkit-transform: rotateZ(360deg);
     -moz-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
+    color: #00BDBD;
 }
 
 @media screen and (min-width: 1200px) {
