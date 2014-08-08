@@ -4,7 +4,6 @@ $(function($) {
     subbar = $('.sub-nav');
     $(document).ready(function() {
         navbar.sticky({topSpacing: 0});
-        goTo('body');
     });
 
     $(document).scroll(function() {
