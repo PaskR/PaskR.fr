@@ -1,9 +1,6 @@
-<article class="post{% if is_home %}{% else %} no_home{% endif %}">
+<article class="post{% if is_home %}{% else %} full{% endif %}">
     <div class="container">
-        <header class="heading">
-            <h2 class="title"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
-            <p class="infos">Publié le {{ page.date | date: "%d %B %Y à %H:%m" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-        </header>
-        <div class="content">{% if is_home %}{{ page.excerpt }}{% else %}{{ content }}{% endif %}</div>
+        {% include post_header.html %}
+        <div class="content">{{ content }}</div>
     </div>
 </article>

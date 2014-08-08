@@ -3,6 +3,5 @@ layout: default
 ---
 {% for post in site.posts %}
     {% assign page = post %}
-    {% assign is_home = true %}
-    {% include post.html %}
+    {% include post_short.html %}
 {% endfor %}

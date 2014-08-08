@@ -177,7 +177,7 @@ header{
     text-transform:none;
 }
 
-.isStuck{
+.is-sticky .navbar-wrapper{
     left:0px;
     width:100%;
 }
@@ -279,6 +279,39 @@ header{
     color:#fff;
 }
 
+.sub-nav {
+    background-color: #00bdbd;
+    position: absolute;
+    top: 62px;
+    right:0; 
+    left: 0;
+    list-style: none;
+    margin: 0 auto;
+    min-height: 5px;
+}
+
+.sub-nav ul {
+    text-align: center;
+    margin: 0;
+}
+
+.sub-nav li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+#header .sub-nav li a {
+    padding: 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .sub-nav li a:hover, #header .sub-nav li.active a {
+    background-color: #4ECECE;
+}
+
 .hideClass{
     display:none;
 }
@@ -292,9 +325,13 @@ header{
 }
 
 #wrapper section .container, .post .container {
-    padding-top:85px;
+    padding-top:110px;
     padding-bottom:90px;
     color: #474d5d;
+}
+
+#wrapper .post .container {
+    padding: 50px 0 0 0;
 }
 
 #wrapper section .container p, .post .container p {
@@ -610,9 +647,9 @@ header{
     color: #474d5d; 
 }
 
-#wrapper .post .content p a {
+#wrapper .post .content a {
     color: #474d5d; 
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
 #wrapper .aboutme h2 {
@@ -642,9 +679,10 @@ ul.socials li {
     display:inline-block;
     text-align:center;
     background:#ffffff;
-    color:#1B1F29;
     line-height:42px;
     margin:0 6px;
+    cursor: pointer;
+    text-align:center;
     width:42px !important;
     height:42px !important;
 
@@ -652,10 +690,14 @@ ul.socials li {
     border-radius: 50%;
 }
 
+ul.socials li:hover a {
+    color:#0a9f9f;
+}
+
 ul.socials li a {
+    color:#262b37;
     width:42px !important;
     height:42px !important;
-    text-align:center;
 }
 
 ul.socials li a i {
@@ -663,14 +705,12 @@ ul.socials li a i {
     -moz-transition: -moz-transform 0.4s ease-out;
     transition: transform 0.4s ease-out;
     line-height:42px !important;
-    color: #262B37;
     padding: 0;
 }
-ul.socials li a:hover i {
+ul.socials li:hover a i {
     -webkit-transform: rotateZ(360deg);
     -moz-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
-    color: #00BDBD;
 }
 
 @media screen and (min-width: 1200px) {
@@ -724,6 +764,15 @@ ul.socials li a:hover i {
 
     .navbar.navbar-inverse.navbar-static-top a {
         padding-left: 17px;
+    }
+    
+    .sub-nav {
+        display: none;
+    }
+    
+    .navbar-wrapper {
+        border-bottom: 4px solid #00bdbd;
+        
     }
 
 }

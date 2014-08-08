@@ -1,13 +1,18 @@
 # Site settings
 title: PaskR
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: ""
 baseurl: ""
 url: "http://paskr.github.io"
 
-owner:
+author:
     email: hello@paskr.fr
 
 # Build settings
-timezone:    Europe/Paris
 markdown: kramdown
-permalink:   /blog/:title
+permalink:   /:title
+
+paskr:
+    cv:
+        enabled: true
+    comments:
+        provider: disqus

@@ -1,0 +1,4 @@
+<header class="heading">
+    <h2 class="title"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+    <p class="infos">Publié le {{ page.date | date: "%d %B %Y à %R" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+</header>

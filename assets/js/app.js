@@ -1,34 +1,48 @@
+var navbar, subbar;
 $(function($) {
+    navbar = $('.navbar-wrapper');
+    subbar = $('.sub-nav');
     $(document).ready(function() {
-        var navbar = $('.navbar-wrapper'), parts = new Array();
-        $('ul.nav a[href^="#"]', navbar).each(function() {
-            parts.push(this.hash.replace('#', ''));
-        });
-        navbar.stickUp({
-            parts: parts,
-            itemClass: 'menuItem',
-            itemHover: 'active',
-            topMargin: 'auto'
-        });
+        navbar.sticky({topSpacing: 0});
         goTo('body');
     });
-});
 
-$(function() {
     $(document).scroll(function() {
         refreshPies();
     });
     refreshPies();
 
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            if(this.hash==="#wrapper"){
-                window.location.href = '/';
-            }
+    var sections = [], current_id, scrolled_id;
+    $('a',subbar).each(function() {
+        if (this.hash) {
+            sections.push($(this.hash));
+        }
+    }).click(function(e) {
+        if (this.hash) {
+            e.preventDefault();
+            activateLink($(this));
             return goTo(this.hash);
         }
     });
+    
+    $(window).scroll(function() {
+        var scrollTop = $(this).scrollTop() + navbar.height() + subbar.height();
+        for (var i in sections) {
+            if (scrollTop > sections[i].offset().top) {
+                scrolled_id = sections[i].attr('id');
+            }
+        }
+        if (scrolled_id !== current_id) {
+            current_id = scrolled_id;
+            activateLink($('a[href="#' + current_id + '"]'));
+        }
+    });
 });
+
+function activateLink(link) {
+    $('.sub-nav li.menuItem').removeClass('active');
+    link.parent('li.menuItem').addClass('active');
+}
 
 var index = 0;
 function refreshPies() {
@@ -52,7 +66,7 @@ function goTo(hash) {
     target = target.length ? target : $('[name=' + hash.slice(1) + ']');
     if (target.length) {
         $('html,body').animate({
-            scrollTop: target.offset().top - 60
+            scrollTop: target.offset().top - navbar.height()
         }, 1000);
         return false;
     }
