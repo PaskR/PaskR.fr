@@ -20,7 +20,22 @@ module.exports = function(grunt) {
                 }
             }
         },
+        imagemin: {
+            all: {
+                files: [{
+                    expand: true,
+                    cwd: 'assets/images/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'assets/images/'
+                }]
+            }
+        },
         watch: {
+            img: {
+                files: ['assets/images/*.{png,jpg,gif}'],
+                tasks: ['imagemin'],
+                options: {span: false}
+            },
             css: {
                 files: ['assets/css/style.min.css'],
                 tasks: ['cssmin'],
@@ -34,5 +49,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['cssmin', 'jshint', 'uglify']);
+    grunt.registerTask('default', ['cssmin', 'jshint', 'uglify','imagemin']);
 };
