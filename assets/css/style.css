@@ -150,12 +150,10 @@ header{
 .banner{
     overflow:hidden;
     margin:0 auto !important;
-    //background: #1b1f29;/* url(http://waldir.org/blog/wp-content/uploads/2014/02/javascript.png) no-repeat center center;*/
     position: relative;
 }
 
 .banner-text{
-    //position:absolute;
     margin: 75px auto;
     left:0;
     right:0;
@@ -861,7 +859,6 @@ ul.socials li:hover a i {
 
 
 @media screen and (max-width: 480px) {
-
     .navbar.navbar-inverse.navbar-static-top a{
         line-height: 17px;
         padding-top:11px;
@@ -878,11 +875,6 @@ ul.socials li:hover a i {
     .aboutme img{
         width:100%;
     }
-
-    /* .bntDownload{
-        font-size: 13px;
-        padding: 16px 14px;
-    }*/
 
     .contact-form textarea{
         margin-bottom:20px;
