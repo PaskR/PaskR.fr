@@ -13,6 +13,6 @@ permalink:   /:title
 
 paskr:
     cv:
-        enabled: true
+        enabled: false
     comments:
         provider: disqus
