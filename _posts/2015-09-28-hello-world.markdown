@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World !"
-date:   2014-08-27 00:17:43
+date:   2015-09-28 22:17:43
 ---
 
 Salut à tous, je suis Pascal RONDON alias PaskR ! Développeur Web et passionné par ce domaine, cela faisait plusieurs mois, voire années, que je souhaitais me lancer dans l’aventure… voila ! C’est chose faite !
