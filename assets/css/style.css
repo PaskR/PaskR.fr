@@ -167,9 +167,6 @@ header{
     zoom: 1;
 }
 
-.banner-text h1{
-    text-transform:uppercase;
-}
 .banner-text h2{
     font-size:34px;
     text-transform:none;
