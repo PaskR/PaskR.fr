@@ -6,3 +6,7 @@
 .banner-text {
   margin: 0 auto;
 }
+
+section .container {
+  margin: 0;
+}
