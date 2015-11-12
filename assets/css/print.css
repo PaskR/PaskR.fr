@@ -18,6 +18,6 @@
   width: auto;
 }
 
-.work .details {
-  border: none;
+.work .details, .formations .work .details {
+  border-width: 1px;
 }
