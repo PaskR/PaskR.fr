@@ -9,4 +9,5 @@
 
 section .container {
   margin: 0;
+  width: auto;
 }
