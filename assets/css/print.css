@@ -17,3 +17,7 @@
   padding: 10px;
   width: auto;
 }
+
+.work .details {
+  border: none;
+}
