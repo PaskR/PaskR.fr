@@ -1,6 +1,6 @@
-<article class="post{% if is_home %}{% else %} full{% endif %}">
+<article itemscope itemtype="http://schema.org/BlogPosting" class="post{% if is_home %}{% else %} full{% endif %}">
     <div class="container">
         {% include post_header.html %}
-        <div class="content">{{ content }}</div>
+        <div itemprop="description" class="content">{{ content }}</div>
     </div>
 </article>
