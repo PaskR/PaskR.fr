@@ -3,8 +3,9 @@ layout: default
 ---
 {% include post.html %}
 
-
-{% case site.paskr.comments.provider %}
-    {% when "disqus" %}
-        {% include disqus_comments.html %}
-{% endcase %}
+{% if page.comments %}
+    {% case site.paskr.comments.provider %}
+        {% when "disqus" %}
+            {% include disqus_comments.html %}
+    {% endcase %}
+{% endif %}
