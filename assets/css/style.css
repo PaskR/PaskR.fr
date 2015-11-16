@@ -876,5 +876,41 @@ ul.socials li:hover a i {
     .contact-form textarea{
         margin-bottom:20px;
     }
-
 }
+
+@media print {
+    * {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .banner-text {
+        margin: 0 auto;
+    }
+
+    #wrapper section .container, .post .container {
+        margin: 0;
+        padding: 10px;
+        width: auto;
+    }
+
+    .work .details, .formations .work .details {
+        border-width: 1px;
+        margin: 0;
+    }
+
+    .work .right, .formations .work .right {
+        padding: 0;
+    }
+
+    .work .work-year {
+        font-weight: normal !important;
+        margin: 0 !important;
+    }
+}
+

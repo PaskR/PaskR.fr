@@ -6,7 +6,6 @@ module.exports = function(grunt) {
             all: {
                 files: {
                     'assets/css/style.min.css': ['assets/css/style.css','assets/css/syntax.css'],
-                    'assets/css/print.min.css': ['assets/css/print.css']
                 }
             }
         },
@@ -38,12 +37,12 @@ module.exports = function(grunt) {
                 options: {span: false}
             },
             css: {
-                files: ['assets/css/style.min.css'],
+                files: ['assets/css/style.css'],
                 tasks: ['cssmin'],
                 options: {span: false}
             },
             js: {
-                files: ['assets/js/*.js', '!assets/js/app.min.js'],
+                files: ['assets/js/*.js', '!assets/js/app.js'],
                 tasks: ['jshint', 'uglify'],
                 options: {span: false}
             }
