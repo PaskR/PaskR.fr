@@ -664,6 +664,10 @@ header{
     font-size: 12px;
 }
 
+.scrolloff {
+    pointer-events: none;
+}
+
 ul.socials {
     margin:0 auto;
     text-align:center;
@@ -720,7 +724,6 @@ ul.socials li:hover a i {
     }
 }
 
-
 @media screen and (max-width: 991px) {
     .navbar.navbar-inverse.navbar-static-top a{
         padding-left:18px;
@@ -742,9 +745,6 @@ ul.socials li:hover a i {
         text-align:center;
     }
 }
-
-
-
 
 @media screen and (max-width: 810px) {
     body{
@@ -772,7 +772,6 @@ ul.socials li:hover a i {
 
 }
 
-
 @media screen and (min-width: 768px) {
     .contact-form input.col-sm-6 {
         width: 48.5%;
@@ -783,7 +782,6 @@ ul.socials li:hover a i {
     
 }
 
-
 @media screen and (max-width: 768px) {
     .navbar-wrapper .container,
     .navwrapper .container{
@@ -792,7 +790,6 @@ ul.socials li:hover a i {
     }
 
 }
-
 
 @media screen and (max-width: 767px) {
     .navbar-header{
@@ -832,7 +829,6 @@ ul.socials li:hover a i {
         padding-top: 30px;
     }
 }
-
 
 @media screen and (max-width: 650px) {
     #wrapper{
