@@ -816,9 +816,9 @@ ul.socials li:hover a i {
     ul.navbar-nav li a{
         display:block;
     }
-    .map-area {
+    /*.map-area {
         display: none;
-    }
+    }*/
 
     .banner-text {
         background: none;
