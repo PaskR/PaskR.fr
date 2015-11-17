@@ -36,6 +36,24 @@ $(function($) {
             activateLink($('a[href="#' + current_id + '"]'));
         }
     });
+
+    if ($('section#contact').length > 0) {
+        var className = 'scrolloff', $map = $('#map'), $overlay = $('.map-area');
+
+        $overlay.on('mouseup', function () {
+            $map.addClass(className);
+        });
+
+        $overlay.on('mousedown', function () {
+            $map.removeClass(className);
+        });
+
+        $map.on('mouseleave', function () {
+            $map.addClass(className);
+        });
+
+        $map.addClass(className);
+    }
 });
 
 function activateLink(link) {
