@@ -35,12 +35,12 @@ permalink: /contact/
 
 <script>
     $(document).ready(function () {
-        var className = 'scrolloff', $map = $('#map').addClass(className), $overlay = $('.map-area');
-
+        var className = 'scrolloff', $map = $('#map'), $overlay = $('.map-area');
+        
         $overlay.on('mouseup', function () {
             $map.addClass(className);
         });
-        
+
         $overlay.on('mousedown', function () {
             $map.removeClass(className);
         });
@@ -48,5 +48,7 @@ permalink: /contact/
         $map.on('mouseleave', function () {
             $map.addClass(className);
         });
+
+        $map.addClass(className)
     });
 </script>
