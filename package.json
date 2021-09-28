@@ -1,14 +1,21 @@
 {
-  "name": "paskr",
+  "name": "paskr/website",
   "version": "0.0.0",
   "description": "...",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-cssmin": "^0.10.0",
-    "grunt-contrib-imagemin": "^0.8.1",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-uglify": "^0.5.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "load-grunt-tasks": "^0.6.0"
+    "glob-parent": ">=5.1.2",
+    "grunt": "^1.4.1",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "nth-check": ">=2.0.1",
+    "semver-regex": ">=3.1.3",
+    "set-value": ">=4.0.1"
+  },
+  "scripts": {
+    "default": "./node_modules/grunt/bin/grunt default"
   }
 }
