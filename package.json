@@ -4,7 +4,7 @@
   "description": "...",
   "devDependencies": {
     "glob-parent": ">=5.1.2",
-    "grunt": "^1.4.1",
+    "grunt": "^1.5.2",
     "grunt-contrib-cssmin": "^4.0.0",
     "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-jshint": "^3.0.0",
